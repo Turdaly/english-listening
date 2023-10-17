@@ -4,152 +4,406 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <script src="js/tabs.js"></script>
 </head>
 <body>
     <header class="header">
-        <div class="container header_container">
+        <div class="container header__container">
+            <div class="logo">
+                <a href="" class="logo__link">
+                    <img src="images/star-logo.svg" alt="" class="logo__img"> 
+                    <h3 class="logo-name">English course</h3>
+                </a>
+            </div>
 
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#reproduction" class="nav-link">Audio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#new" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-us" class="nav-link">About Us</a>
+                    </li>                  
+                </ul>
+            </nav>
         </div>
     </header>
 
-   <main>
-        <section class="section-exercise">
-            <div class="container exercise_container">
-                <a href="" class="btn btn_back">
-                    Back to quizzes
-                </a>
-                <div class="exercise-table">
-                    <table border="1" width="60%">
-                        <tr>
-                            <td class="column">Level</td>
-                            <td class="column">Topic</td>
-                            <td class="column">Speakers</td>
-                            <td class="column">Length</td>
-                        </tr>
-                        <tr>
-                            <td class="column">intermediate</td>
-                            <td class="column">student creadit cards</td>
-                            <td class="column">man-woman</td>
-                            <td class="column">02:00</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="exercise_content">
-                    <h2 class="exercise_title">
-                        Pre-Listening Exercise
-                    </h2>
-                    <p class="exercise_description">
-                        Student credit cards are becoming more and more popular, and a number of Web sites can provide information on comparing your options. With these ideas in mind, what are the advantages and disadvantages of using credit cards, particularly for people your age and in similar financial situations?
-                    </p>
-                    <h2 class="exercise_title">
-                        Idioms
-                    </h2>
-
-                    <p class="exercise_description">
-                        <strong>““dough””</strong> = informal for money
-                        <br>
-                        <i>
-                            “I need more dough to pay off my credit card bill.”
-                        </i>
-                    </p>
-                    <p class="exercise_description">
-                        <strong>“have money to burn”</strong> = have a lot of money
-                        <br>
-                        <i>
-                            “Sara’s dad always gives her a big allowance, so she has money to burn.”
-                        </i>
+    <main>
+        <section class="section-hero">
+            <div class="container section-hero__container">
+                <img src="images/header-fon.jpg" alt="" class="image-bird">
+                <div class="section-hero__content">
+                    <h1 class="section-hero__heading">
+                        Listening audio from  <span class="section-hero__heading-logo">Course</span>
+                    </h1>
+                    <p class="section-hero__description">
+                        Here you can find activities to practise your listening skills. Listening will help you to improve your understanding of the language and your pronunciation.
                     </p>
 
-                    <h2 class="exercise-title">
-                        Listening Exercise
-                    </h2>
-                    <p class="audio_text">
-                        <strong>A.</strong> Listen to the recording and answer the questions.
-                    </p>
-                    <audio controls>
-                        <source src="./audio/1-аудио.mp3">
-                        <p class="">Your browser doesn't support HTML5 audio</p>
-                    </audio>
                 </div>
             </div>
         </section>
 
-        <section class="test">
-            <div class="container test-container">
-                <ul class="test_list">
-                    <h3 class="test-question">
-                        The woman got a credit card because she ______.
-                    </h3>
-                    <li class="test_item">                    
-                        she wants to buy things at a discount
-                    </li>
-                    <li class="test_item">                    
-                        she wants to build a good credit rating
-                    </li>
-                    <li class="test_item">                    
-                        doesn't want to borrow money from family
-                    </li>
+        <section class="reproduction" id="reproduction">
+            <div class="container reproduction__container">
+                <div class="reproduction__inner">
+                    <div class="reproduction__head">
+                        <h2 class="reproduction__title">Listening audio</h2>
+                        <div class="reproduction__countries">
+                            <button class="btn reproduction__country-btn reproduction__country-btn-active" data-path="france">Elementary</button>
+                            <button class="btn reproduction__country-btn" data-path="germany">Intermediate</button>
+                            <button class="btn reproduction__country-btn" data-path="england">Advanced</button>
+                        </div>
+                    </div>
+                    <ul class="reproduction__cards reproduction__cards-active" data-target="france">
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-1.jpg" alt="">
+                            <h3 class="reproduction__card-name">Credit Card</h3>
+                            <p class="reproduction__card-descrciption">Length: 02:00</p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-2.jpg" alt="">
+                            <h3 class="reproduction__card-name">Healthy Lifestyle</h3>
+                            <p class="reproduction__card-descrciption">Length: 01:19</p>
+                            <a href="HealthyLifestyle.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-3.jpg" alt="">
+                            <h3 class="reproduction__card-name">Hiking Family</h3>
+                            <p class="reproduction__card-descrciption">Length: 01:53</p>
+                            <a href="HikingFamily.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-4.jpg" alt="">
+                            <h3 class="reproduction__card-name">Alien Encounters</h3>
+                            <p class="reproduction__card-descrciption">Length: 02:13</p>
+                            <a href="AlienEncounters.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-5.jpg" alt="">
+                            <h3 class="reproduction__card-name">Airline Safety</h3>
+                            <p class="reproduction__card-descrciption">Length: 01:53</p>
+                            <a href="AirlineSafety.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-6.jpg" alt="">
+                            <h3 class="reproduction__card-name">Baby Food</h3>
+                            <p class="reproduction__card-descrciption">Length: 02:00</p> </p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
 
-                    <h3 class="test-question">
-                        The woman didn't buy _____.
-                    </h3>
-                    <li class="test_item">                    
-                        a TV
-                    </li>
-                    <li class="test_item">                    
-                        a digital camera
-                    </li>
-                    <li class="test_item">                    
-                        a stereo
-                    </li>
+                    <ul class="reproduction__cards" data-target="germany">
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-germany-1.jpg" alt="">
+                            <h3 class="reproduction__card-name">Охота Амура</h3>
+                            <p class="reproduction__card-descrciption">Холст, масло (50х80)</p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-germany-2.jpg" alt="">
+                            <h3 class="reproduction__card-name">Дама с собачкой</h3>
+                            <p class="reproduction__card-descrciption">Холст, масло (50х80)</p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-germany-3.jpg" alt="">
+                            <h3 class="reproduction__card-name">Процедура</h3>
+                            <p class="reproduction__card-descrciption">Цветная литография (40х60)</p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-germany-4.jpg" alt="">
+                            <h3 class="reproduction__card-name">Роза</h3>
+                            <p class="reproduction__card-descrciption">Бумага, акрил (50х80)</p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-germany-5.jpg" alt="">
+                            <h3 class="reproduction__card-name">Птичья трапеза</h3>
+                            <p class="reproduction__card-descrciption">Цветная литография (40х60)</p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-germany-6.jpg" alt="">
+                            <h3 class="reproduction__card-name">Пейзаж с рыбой</h3>
+                            <p class="reproduction__card-descrciption">Цветная литография (40х60) </p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
 
-                    <h3 class="test-question">
-                        The man says that a problem with credit cards is that ______.
-                    </h3>
-                    <li class="test_item">                    
-                        interest rates are often very high
-                    </li>
-                    <li class="test_item">                    
-                        they can't be used in all countries
-                    </li>
-                    <li class="test_item">                    
-                        it can lead to internet fraud
-                    </li>
-
-                    <h3 class="test-question">
-                        The credit card limit on the woman's card is about _____.
-                    </h3>
-                    <li class="test_item">                    
-                        $12,000
-                    </li>
-                    <li class="test_item">                    
-                        $21,000
-                    </li>
-                    <li class="test_item">                    
-                        $20,000
-                    </li>
-                    <li class="test_item">                    
-                        $18,000
-                    </li>
-
-                    <h3 class="test-question">
-                        The man suggests that the woman _____.
-                    </h3>
-                    <li class="test_item">                    
-                        pay off her debt with birthday money
-                    </li>
-                    <li class="test_item">                    
-                        shred her credit cards
-                    </li>
-                    <li class="test_item">                    
-                        come up a financial management plan
-                    </li>
-                </ul>
+                    <ul class="reproduction__cards" data-target="england">
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-england-1.jpg" alt="">
+                            <h3 class="reproduction__card-name">Охота Амура</h3>
+                            <p class="reproduction__card-descrciption">Холст, масло (50х80)</p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-england-2.jpg" alt="">
+                            <h3 class="reproduction__card-name">Дама с собачкой</h3>
+                            <p class="reproduction__card-descrciption">Холст, масло (50х80)</p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-england-3.jpg" alt="">
+                            <h3 class="reproduction__card-name">Процедура</h3>
+                            <p class="reproduction__card-descrciption">Цветная литография (40х60)</p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-england-4.jpg" alt="">
+                            <h3 class="reproduction__card-name">Роза</h3>
+                            <p class="reproduction__card-descrciption">Бумага, акрил (50х80)</p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-england-5.jpg" alt="">
+                            <h3 class="reproduction__card-name">Птичья трапеза</h3>
+                            <p class="reproduction__card-descrciption">Цветная литография (40х60)</p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                        <li class="reproduction__card">
+                            <img class="reproduction__card-img" src="images/card-england-6.jpg" alt="">
+                            <h3 class="reproduction__card-name">Пейзаж с рыбой</h3>
+                            <p class="reproduction__card-descrciption">Цветная литография (40х60) </p>
+                            <a href="CreditCard.html">
+                                <button class="btn reproduction__card-btn">
+                                    Go Over
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
-   </main>
+
+        <section class="section-collection" id="new">
+            <div class="container section-collection__container">
+                <div class="section-collection__header">
+                    <img src="images/collection-star.svg" alt="section-collection__icon">
+                    <h2 class="section-collection__heading">
+                        Soon we're gonna add new listening audio
+                    </h2>
+                </div>
+                <p class="setion-collection__desctiption">
+                    Listen to casual conversations between native English speakers as they discuss daily life, sharing insights into colloquial expressions and common language patterns 
+                    <br><br>"Explore the English language through snippets of news articles and reports. Enhance your vocabulary with topics ranging from current events.
+                </p>
+                
+
+                <button class="btn section-collection__btn">
+                    Learn
+                </button>
+            </div>
+        </section>
+
+        <section class="section-team" id="about-us">
+            <div class="container section-team__container">
+                <img src="images/team-fon.png" alt="" class="section-team__img">
+                <div class="section-team__content">
+                    <h2 class="section-team__heading">
+                        Our team
+                    </h2>
+                    <p class="section-team__description">
+                        The significance of these problems is so obvious that the basic vector of development allows us to assess the significance of experiments that are striking in their scale and grandiosity. We have to start from the fact that the consultation is with a broad asset.
+                    </p>
+                    <img src="images/team-1.png" alt="" class="section-user__img">
+                    <img src="images/team-2.png" alt="" class="section-user__img">
+                    <img src="images/team-3.png" alt="" class="section-user__img">
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container footer__container">
+                <div class="footer__inner">
+                    <div class="footer__info">
+                        <a href="" class="footer__logo">
+                            <img src="images/star-logo.svg" alt="" class="footer-logo__img">
+                            <h3 class="footer__logo-name">English course</h3>
+                        </a>
+                        <div class="footer__contact">
+                            <a href="tel:+77001231020" class="footer-phone__link">+7 (799)-999-99-99</a>
+                            <p class="footer-phone__text">Мастерская</p>
+                        </div>
+                    </div>
+                
+                    <div class="footer-menu">
+                        <div class="footer-menu__col">
+                            <h3 class="footer-menu__heading">
+                                Audio
+                            </h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">
+                                        Elementary
+                                    </a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">
+                                        Intermediate
+                                    </a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">
+                                        Advanced
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__col">
+                            <h3 class="footer-menu__heading">
+                                News
+                            </h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">
+                                        2021
+                                    </a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">
+                                        2020
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu__col">
+                            <h3 class="footer-menu__heading">
+                                About Us
+                            </h3>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">
+                                        Sezim
+                                    </a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">
+                                        Aibek
+                                    </a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">
+                                        Dauletkerei
+                                    </a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">
+                                        Miras
+                                    </a>
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a href="" class="footer-menu__link">
+                                        Yelnur
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
     
+                    <div class="footer-props">
+                        <div class="footer-props__icon">
+                            <ul class="footer-social__list">
+                                <li class="footer-social__item">
+                                    <a href="footer-social__link">
+                                        <span class="footer-social-icon footer-social-icon-facebook"></span>
+                                    </a>
+                                </li>
+                                <li class="footer-social__item">
+                                    <a href="footer-social__link">
+                                        <span class="footer-social-icon footer-social-icon-instagram"></span>
+                                    </a>
+                                </li>
+                                <li class="footer-social__item">
+                                    <a href="footer-social__link">
+                                        <span class="footer-social-icon footer-social-icon-youtube"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <small class="footer-copyright">Ink. House ®</small>
+                        <p class="footer-copyright">All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
     
 </body>
 </html>

@@ -4,9 +4,31 @@
     box-sizing: border-box;
 }
 
+audio {
+    width: 700px;
+}
+
+/* Style for the audio controls in Chrome and Safari */
+audio::-webkit-media-controls-panel {
+    background-color: #598D66;
+}
+
+/* Style for the audio controls in Firefox */
+audio::-moz-media-controls-panel {
+    background-color: white;
+}
+
+/* Style for the audio controls in Edge and IE */
+audio::-ms-media-controls-panel {
+    background-color:white;
+}
+
 html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: 'Raleway', sans-serif;
-    max-width: 1400px;
     margin: 0;
 }
 
@@ -39,7 +61,7 @@ h2 {
     letter-spacing: .5px;
     margin-top: 15px;
     margin-bottom: 15px;
-    color: #00adea;
+    color: #598D66;
 }
 .container {
     max-width: 1110px;
@@ -63,7 +85,17 @@ h2 {
     cursor: pointer;
     transition: background-color .4s ease;
     color: white;
-    background-color: #00adea;
+    background-color: #598D66;
+}
+
+/* nav */
+
+nav {
+    outline: 1px solid #E6E6E6;
+}
+
+.btn_back {
+    margin-top: 10px;
 }
 
 /* section-exercise */
@@ -95,9 +127,33 @@ h2 {
 .test-container {
     display: inline-block;
     width: 750px;
-    padding: 50px 20px;
+    padding-left: 0 20px 40px 20px;
     border: 1.5px solid #E6E6E6;
     border-radius: 5px;
     margin-left: 180px;
+    margin-top: 5px;
+    margin-bottom: 40px;
 
 }
+
+.test-question {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #404040;
+}
+
+.test_item {
+    margin-bottom: 5px;
+    padding: 12px 12px 14px 12px;
+    color: #404040;
+    background-color: #E6E6E6;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.test_item:hover {
+    color: white;
+    background-color: #2596be;
+}
+

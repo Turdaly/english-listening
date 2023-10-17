@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header_container">
+
+        </div>
+    </header>
+
+   <main>
+        <section class="section-exercise">
+            <div class="container exercise_container">
+                <a href="./index.html" class="btn btn_back">
+                    Back to quizzes
+                </a>
+                <div class="exercise-table">
+                    <table border="1" width="60%">
+                        <tr>
+                            <td class="column">Level</td>
+                            <td class="column">Topic</td>
+                            <td class="column">Speakers</td>
+                            <td class="column">Length</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Elementary</td>
+                            <td class="column">healthy lifestyle and exercise</td>
+                            <td class="column">man-woman</td>
+                            <td class="column">01:19</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="exercise_content">
+                    <h2 class="exercise_title">
+                        Pre-Listening Exercise
+                    </h2>
+                    <p class="exercise_description">
+                        Think of five important steps to maintaining a healthy lifestyle. Write them down and look up information on the Internet to support these ideas.
+                    </p>
+                    <h2 class="exercise_title">
+                        Idioms
+                    </h2>
+
+                    <p class="exercise_description">
+                        <strong>“feel like a million bucks” </strong> = feel in very good health
+                        <br>
+                        <i>
+                            “Hey, some people get tired after a long day’s work, but I feel like a million bucks.”
+                        </i>
+                    </p>
+                    <p class="exercise_description">
+                        <strong>“play it safe”</strong> = be careful and not take chances
+                        <br>
+                        <i>
+                            “My knee still hurts, so I’m going to play it safe and not go jogging today.”
+                        </i>
+                    </p>
+
+                    <h2 class="exercise-title">
+                        Listening Exercise
+                    </h2>
+                    <p class="audio_text">
+                        <strong>A.</strong> Listen to the recording and answer the questions.
+                    </p>
+                    <audio controls style="width: 700px;">
+                        <source src="./audio/2-аудио.mp3">
+                        <p class="">Your browser doesn't support HTML5 audio</p>
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section class="test">
+            <div class="container test-container">
+                <ul class="test_list">
+                    <h3 class="test-question">
+                        The man wants to ______.
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 0, 0)">                    
+                        run a mountain marathon
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 0, 1)">                    
+                        try out for the company basketball team     
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 0, 0)">                    
+                        join a soccer club
+                    </li>
+
+                    <h3 class="test-question">
+                        The woman is worried that ______.
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 1, 1)">                    
+                        her husband's health isn't good
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 1, 0)">                    
+                        her husband is becoming a fitness freak
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 1, 0)">                    
+                        the man works too much
+                    </li>
+
+                    <h3 class="test-question">
+                        First, the woman suggests that her husband _____.
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 2, 0)">                    
+                        start with light workouts
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 2, 0)">                    
+                        tvisit with a fitness trainer
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 2, 1)">                    
+                        see a doctor
+                    </li>
+
+                    <h3 class="test-question">
+                        Her husband should ____.
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 3, 0)">                    
+                        eat more protein
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 3, 0)">                    
+                        consume less salt
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 3, 1)">                    
+                        eat less fatty foods
+                    </li>
+                    
+
+                    <h3 class="test-question">
+                        Why does the man's wife recommend cycling?
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 4, 1)">                    
+                        It helps strengthen the heart.
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 4, 0)">                    
+                        It is good for improving muscle tone
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 4, 0)">                    
+                        It helps develop mental toughness.
+                    </li>
+                </ul>
+            </div>
+        </section>
+   </main>
+</body>
+</html>

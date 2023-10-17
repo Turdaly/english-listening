@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header_container">
+
+        </div>
+    </header>
+
+   <main>
+        <section class="section-exercise">
+            <div class="container exercise_container">
+                <a href="./index.html" class="btn btn_back">
+                    Back to quizzes
+                </a>
+                <div class="exercise-table">
+                    <table border="1" width="60%">
+                        <tr>
+                            <td class="column">Level</td>
+                            <td class="column">Topic</td>
+                            <td class="column">Speakers</td>
+                            <td class="column">Length</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Elementary</td>
+                            <td class="column">Alien Encounters</td>
+                            <td class="column">two men</td>
+                            <td class="column">02:13</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="exercise_content">
+                    <h2 class="exercise_title">
+                        Pre-Listening Exercise
+                    </h2>
+                    <p class="exercise_description">
+                        Do you believe that life exists on other worlds in the universe? What do you think this life looks like? Do you think that UFOs really exist?
+                    </p>
+                    <h2 class="exercise_title">
+                        Idioms
+                    </h2>
+
+                    <p class="exercise_description">
+                        <strong>“stretch the truth”</strong> = exaggerate the truth
+
+                        <br>
+                        <i>
+                            “My brother said he saw an alien, but he sometimes stretches the truth. It probably was just a bear.”
+                        </i>
+                    </p>
+                    <p class="exercise_description">
+                        <strong>“cool as a cucumber”</strong> = very relax and at ease
+                        <br>
+                        <i>
+                            “The captain was cool as a cucumber when aliens boarded our ship.”
+                        </i>
+                    </p>
+
+                    <h2 class="exercise-title">
+                        Listening Exercise
+                    </h2>
+                    <p class="audio_text">
+                        <strong>A.</strong> Listen to the recording and answer the questions.
+                    </p>
+                    <audio controls style="width: 700px;">
+                        <source src="./audio/4-аудио.mp3">
+                        <p class="">Your browser doesn't support HTML5 audio</p>
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section class="test">
+            <div class="container test-container">
+                <ul class="test_list">
+                    <h3 class="test-question">
+                        Where was the man coming from when he first saw the UFO?.
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 0, 1)">                    
+                        He was returning home from a party.
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 0, 0)">                    
+                        He just got off work when he saw the UFO.
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 0, 0)">                    
+                        He was driving home from a restaurant.  
+                    </li>
+
+                    <h3 class="test-question">
+                        What time did the man report the incident to the police?
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 1, 0)">                    
+                        about 3:00 a.m.
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 1, 0)">                    
+                        about 12:00 AM
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 1, 1)">                    
+                        about 5:00 a.m.
+                    </li>
+
+                    <h3 class="test-question">
+                        What jumped out in front of the man's car?
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 2, 0)">                    
+                        a strange man
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 2, 0)">                    
+                        a giant deer
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 2, 1)">                    
+                        a hairy alien
+                    </li>
+
+                    <h3 class="test-question">
+                        What happened next to the man?
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 3, 0)">                    
+                        He followed the animal to a plane.
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 3, 0)">                    
+                        He walked to a flying saucer.
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 3, 1)">                    
+                        He was carried to a spaceship.
+                    </li>
+                
+
+                    <h3 class="test-question">
+                        What does the police officer suggest at the end of the story?
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 4, 0)">                    
+                        The man should contact the newspaper
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 4, 1)">                    
+                        The man should seek counseling.
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 4, 0)">                    
+                        They should call the fire department.
+                    </li>
+                </ul>
+            </div>
+        </section>
+   </main>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header_container">
+
+        </div>
+    </header>
+
+   <main>
+        <section class="section-exercise">
+            <div class="container exercise_container">
+                <a href="./index.html" class="btn btn_back">
+                    Back to quizzes
+                </a>
+                <div class="exercise-table">
+                    <table border="1" width="60%">
+                        <tr>
+                            <td class="column">Level</td>
+                            <td class="column">Topic</td>
+                            <td class="column">Speakers</td>
+                            <td class="column">Length</td>
+                        </tr>
+                        <tr>
+                            <td class="column">Elementary</td>
+                            <td class="column">family activities</td>
+                            <td class="column">man-woman</td>
+                            <td class="column">01:53</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="exercise_content">
+                    <h2 class="exercise_title">
+                        Pre-Listening Exercise
+                    </h2>
+                    <p class="exercise_description">
+                        What things can parents do to strengthen the relationship with their children? Some people go hiking or do outdoor activities; other people watch movies or go to amusement parks. Discuss your ideas. 
+                    </p>
+                    <h2 class="exercise_title">
+                        Idioms
+                    </h2>
+
+                    <p class="exercise_description">
+                        <strong>“get ahead”</strong> = become successful in your business or career
+                        <br>
+                        <i>
+                            “Often, people give up time with their families to get ahead in life.”
+                        </i>
+                    </p>
+                    <p class="exercise_description">
+                        <strong>“control/hold the purse strings”</strong> = control the money in a family
+                        <br>
+                        <i>
+                            “My wife is much better at managing our finances, so she controls the purse strings.”
+                        </i>
+                    </p>
+
+                    <h2 class="exercise-title">
+                        Listening Exercise
+                    </h2>
+                    <p class="audio_text">
+                        <strong>A.</strong> Listen to the recording and answer the questions.
+                    </p>
+                    <audio controls style="width: 700px;">
+                        <source src="./audio/3-аудио.mp3">
+                        <p class="">Your browser doesn't support HTML5 audio</p>
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section class="test">
+            <div class="container test-container">
+                <ul class="test_list">
+                    <h3 class="test-question">
+                        Where did Randall grow up?
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 0, 1)">                    
+                        in Indiana
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 0, 1)">                    
+                        in Venezuela
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 0, 0)">                    
+                        in Utah
+                    </li>
+
+                    <h3 class="test-question">
+                        What was his undergraduate major?
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 1, 0)">                    
+                        English
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 1, 0)">                    
+                        Japanese
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 1, 1)">                    
+                        Spanish
+                    </li>
+
+                    <h3 class="test-question">
+                        How many children does he have?
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 2, 0)">                    
+                        three
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 2, 1)">                    
+                        four
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 2, 0)">                    
+                        two
+                    </li>
+
+                    <h3 class="test-question">
+                        Randall ______ when he goes on hikes with his children.
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 3, 0)">                    
+                        points out the wildlife
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 3, 0)">                    
+                        teaches them survival skills
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 3, 1)">                    
+                        tells them stories
+                    </li>
+
+                    <h3 class="test-question">
+                        Randall suggests that parents _____.
+                    </h3>
+                    <li class="test_item" onclick="checkAnswer(this, 4, 1)">                    
+                        help children solve problems
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 4, 0)">                    
+                        enroll their children early into schools
+                    </li>
+                    <li class="test_item" onclick="checkAnswer(this, 4, 0)">                    
+                        be consistent in their discipline
+                    </li>
+                </ul>
+            </div>
+        </section>
+   </main>
+</body>
+</html>
